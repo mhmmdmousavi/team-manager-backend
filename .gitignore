@@ -1,0 +1,43 @@
+# محیط مجازی (venv)
+env/
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# فایل‌های محیط توسعه و IDEها
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# فایل‌های سیستم
+.DS_Store
+Thumbs.db
+
+# فایل‌های پایگاه داده محلی
+db.sqlite3
+
+# پوشه‌های استاتیک و رسانه‌ها (در محیط تولید، این فایل‌ها معمولاً در CDN قرار می‌گیرند)
+static/
+media/
+
+# فایل‌های لاگ
+*.log
+
+# پوشه migrations (اگر نمی‌خواهید به مخزن اضافه شوند)
+**/migrations/
+!**/migrations/__init__.py
+
+# فایل‌های مربوط به Docker
+*.env
+docker-compose.yml
+Dockerfile
+
+# تنظیمات محلی
+local_settings.py
+
+# فایل‌های Cache
+*.cache
