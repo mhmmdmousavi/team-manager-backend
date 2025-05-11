@@ -1,14 +1,14 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
 # accounts/models.py
 
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-class User(AbstractUser):
-    # اگر نیاز به فیلدهای اضافی داشتیم، اینجا اضافه می‌کنیم
-    pass
+# class User(AbstractUser):
+#     # اگر نیاز به فیلدهای اضافی داشتیم، اینجا اضافه می‌کنیم
+#     pass
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
